@@ -14,7 +14,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
-
+/***
+  * 
+  * 
+  * 
+  * @author DELL
+  *
+  */
 public class RemoteWebDriverConfig {
 
 	static ThreadLocal<RemoteWebDriver> d = new ThreadLocal<RemoteWebDriver>();
