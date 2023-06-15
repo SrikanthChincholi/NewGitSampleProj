@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 48.823 s <<< FAILURE! - in TestSuite
+login(sampleproj.sampleproj.LoginTest)  Time elapsed: 7.874 s  <<< FAILURE!
+java.lang.AssertionError: expected [admin123] but found [admin12345]
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:28)
+
+login(sampleproj.sampleproj.LoginTest)  Time elapsed: 7.733 s  <<< FAILURE!
+java.lang.AssertionError: expected [admin123] but found [admin12345]
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:28)
+

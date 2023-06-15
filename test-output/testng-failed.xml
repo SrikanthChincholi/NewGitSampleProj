@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="tests" name="Test3(failed)">
+    <parameter name="browser" value="MicrosoftEdge"/>
+    <classes>
+      <class name="sampleproj.sampleproj.GridEdgeExample">
+        <methods>
+          <include name="setDriver"/>
+          <include name="edgetest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- sampleproj.sampleproj.GridEdgeExample -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="3" parallel="tests" name="Test2(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="sampleproj.sampleproj.GridFirefoxExample">
+        <methods>
+          <include name="firefoxtest"/>
+          <include name="setDriver"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- sampleproj.sampleproj.GridFirefoxExample -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="3" parallel="tests" name="Test1(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="sampleproj.sampleproj.GridChromeExample">
+        <methods>
+          <include name="setDriver"/>
+          <include name="chrometest"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- sampleproj.sampleproj.GridChromeExample -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" name="Test1(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="sampleproj.sampleproj.LoginTest">
+        <methods>
+          <include name="atest"/>
+          <include name="atest"/>
+          <include name="suiteConfig"/>
+          <include name="login" invocation-numbers="1"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- sampleproj.sampleproj.LoginTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)" verbose="0">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="sampleproj.sampleproj.LoginTest">
+        <methods>
+          <include name="atest"/>
+          <include name="atest"/>
+          <include name="suiteConfig"/>
+          <include name="login" invocation-numbers="1"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- sampleproj.sampleproj.LoginTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+</suite> <!-- Failed suite [Suite] -->
