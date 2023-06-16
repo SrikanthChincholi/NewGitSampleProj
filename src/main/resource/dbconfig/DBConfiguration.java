@@ -36,7 +36,7 @@ public class DBConfiguration {
 			readdata.setUserage(rs.getString("userage"));
 			readdata.setUsername(rs.getString("username"));
 			readdata.setPassword(rs.getString("userpassword"));
-			data.add(readdata);//admin // admin123 - row1 with object readdata
+			data.add(readdata);
 			
 		}
 		return data;
