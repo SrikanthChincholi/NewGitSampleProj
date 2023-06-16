@@ -1,12 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 48.823 s <<< FAILURE! - in TestSuite
-login(sampleproj.sampleproj.LoginTest)  Time elapsed: 7.874 s  <<< FAILURE!
+Tests run: 10, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 46.627 s <<< FAILURE! - in TestSuite
+login(sampleproj.sampleproj.LoginTest)  Time elapsed: 7.645 s  <<< FAILURE!
 java.lang.AssertionError: expected [admin123] but found [admin12345]
-	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:28)
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:42)
 
-login(sampleproj.sampleproj.LoginTest)  Time elapsed: 7.733 s  <<< FAILURE!
+login(sampleproj.sampleproj.LoginTest)  Time elapsed: 8.363 s  <<< FAILURE!
 java.lang.AssertionError: expected [admin123] but found [admin12345]
-	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:28)
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:42)
+
+login(sampleproj.sampleproj.LoginTest)  Time elapsed: 10.943 s  <<< FAILURE!
+java.lang.AssertionError: expected [admin123] but found [admin12345]
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:42)
 

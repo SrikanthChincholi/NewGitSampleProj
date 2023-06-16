@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\DELL\eclipse-workspace\AshokIT_2\sampleproj\testng.xml</span>
+                    <span>C:\Users\DELL\git\gitsampleproj\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
+                    <span class="method-stats">10 methods, 3 failed,   7 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</a> <!-- method navigator-link -->
@@ -130,6 +135,31 @@
                         <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="sampleproj.sampleproj.LoginTest" class="method navigator-link" hash-for-method="login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
@@ -155,9 +185,14 @@
                   <span class="method-name">login</span>
                   <span class="parameters">(admin,admin12345,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [admin123] but found [admin12345]
-	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 13 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -168,9 +203,32 @@
                   <span class="method-name">login</span>
                   <span class="parameters">(admin,admin12345,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
                   <div class="stack-trace">java.lang.AssertionError: expected [admin123] but found [admin12345]
-	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:28)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 35 stack frames
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)">
+                  </a> <!-- login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin,admin12345,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [admin123] but found [admin12345]
+	at sampleproj.sampleproj.LoginTest.login(LoginTest.java:42)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+... Removed 13 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -198,25 +256,65 @@
                   <span class="parameters">(admin,admin123,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">
+                  </a> <!-- login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin,admin123,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">
+                  </a> <!-- login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin,admin123,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">
+                  </a> <!-- login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin,admin123,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)">
+                  </a> <!-- login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin,admin123,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)">
+                  </a> <!-- login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">(admin,admin12345,public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflect.Method) throws java.lang.Exception)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\DELL\eclipse-workspace\AshokIT_2\sampleproj\testng.xml</span>
+            <span class="header-content">C:\Users\DELL\git\gitsampleproj\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test1&quot; verbose=&quot;0&quot;&gt;
+&lt;suite parallel=&quot;tests&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test1&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;sampleproj.sampleproj.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test1 --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test2&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;Test2&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;sampleproj.sampleproj.LoginTest&quot;/&gt;
@@ -262,28 +360,52 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(10);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'sampleproj.sampleproj.LoginTest')
-data.setCell(0, 3, 14207);
+data.setCell(0, 3, 16955);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'login')
 data.setCell(1, 2, 'sampleproj.sampleproj.LoginTest')
-data.setCell(1, 3, 10886);
+data.setCell(1, 3, 16132);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'login')
 data.setCell(2, 2, 'sampleproj.sampleproj.LoginTest')
-data.setCell(2, 3, 7868);
+data.setCell(2, 3, 14018);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'login')
 data.setCell(3, 2, 'sampleproj.sampleproj.LoginTest')
-data.setCell(3, 3, 7733);
+data.setCell(3, 3, 12269);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'login')
+data.setCell(4, 2, 'sampleproj.sampleproj.LoginTest')
+data.setCell(4, 3, 11733);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'login')
+data.setCell(5, 2, 'sampleproj.sampleproj.LoginTest')
+data.setCell(5, 3, 11584);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'login')
+data.setCell(6, 2, 'sampleproj.sampleproj.LoginTest')
+data.setCell(6, 3, 10951);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'login')
+data.setCell(7, 2, 'sampleproj.sampleproj.LoginTest')
+data.setCell(7, 3, 10269);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'login')
+data.setCell(8, 2, 'sampleproj.sampleproj.LoginTest')
+data.setCell(8, 3, 9273);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'login')
+data.setCell(9, 2, 'sampleproj.sampleproj.LoginTest')
+data.setCell(9, 3, 9089);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 40 seconds</span>
+              <span class="suite-total-time">Total running time: 44 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -315,72 +437,146 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest(org.testng.TestRunner@571a663c)</span>
-                <span class="method-start">307 ms</span>
+                <span class="method-name">beforeTest(org.testng.TestRunner@4a067c25)</span>
+                <span class="method-start">260 ms</span>
               </div> <!-- configuration-test before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
-                <span class="method-start">352 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</span>
-                <span class="method-start">4144 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
-                <span class="method-start">18353 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
-                <span class="method-start">18478 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">19286 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
-                <span class="method-start">27159 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-test after">
-                <span class="method-name">atest</span>
-                <span class="method-start">27282 ms</span>
-              </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest(org.testng.TestRunner@3a788fe0)</span>
-                <span class="method-start">27634 ms</span>
+                <span class="method-name">beforeTest(org.testng.TestRunner@a1217f9)</span>
+                <span class="method-start">260 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
-                <span class="method-start">27638 ms</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">318 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
+                <span class="method-start">320 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</span>
-                <span class="method-start">28455 ms</span>
+                <span class="method-start">21141 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
-                <span class="method-start">39341 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Chrome, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lan...)</span>
-                <span class="method-start">39467 ms</span>
-              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</span>
+                <span class="method-start">24129 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</span>
-                <span class="method-start">40287 ms</span>
+                <span class="method-start">25532 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</span>
+                <span class="method-start">25561 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</span>
+                <span class="method-start">25599 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</span>
+                <span class="method-start">25906 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</span>
+                <span class="method-start">27734 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</span>
+                <span class="method-start">28370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">login(admin, admin12345, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.Stri...)</span>
+                <span class="method-start">29861 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">login(admin, admin123, public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String...)</span>
+                <span class="method-start">31174 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
-                <span class="method-start">48020 ms</span>
+                <span class="method-start">34847 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">35882 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">36177 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">37186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">38109 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">38829 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">39551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">40265 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">42131 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">atest</span>
-                <span class="method-start">48106 ms</span>
+                <span class="method-start">42756 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="configuration-method after">
+                <span class="method-name">atest(public void sampleproj.sampleproj.LoginTest.login(java.lang.String,java.lang.String,java.lang.reflec...)</span>
+                <span class="method-start">44504 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-test after">
+                <span class="method-name">atest</span>
+                <span class="method-start">44998 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -28,13 +28,15 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import sampleproj.utils.PropertyReader;
 
 public class BaseClass {
 
 	private static ExtentReports reports;
 	private static ExtentSparkReporter sparkreport;
 	ExtentTest test;
-	static WebDriver d;
+	String url = PropertyReader.getValue("url");
+	static ThreadLocal<WebDriver> d = new ThreadLocal<WebDriver>();
 
 	@BeforeSuite
 	public void suiteConfig() throws Exception {
@@ -51,6 +53,7 @@ public class BaseClass {
 	public void beforeMethod(String browser, Method meth) {
 		getBrowser(browser);
 		test.info("Browser Launched !!");
+		d.get().get(url);
 	
 	}
 
@@ -63,7 +66,7 @@ public class BaseClass {
 		} else if (result.getStatus() == ITestResult.SKIP) {
 			test.log(Status.SKIP, meth.getName() + " Test Skipped");
 		}
-		d.quit();
+		d.get().quit();
 		test.log(Status.PASS, "Browser closed !!");
 		
 	}
@@ -73,27 +76,28 @@ public class BaseClass {
 		reports.flush();
 	}
 
-	private static WebDriver getBrowser(String browser) {
+	private static ThreadLocal<WebDriver> getBrowser(String browser) {
 		if (browser.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--headless");
-			d = new ChromeDriver(options);
-			d.manage().window().maximize();
-			d.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
-			d.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
+			//options.addArguments("--headless");
+			options.addArguments("--disable-notifications");
+			d.set(new ChromeDriver(options));
+			d.get().manage().window().maximize();
+			d.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+			d.get().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 			return d;
 		} else if (browser.equalsIgnoreCase("Firefox")) {
 			WebDriverManager.firefoxdriver().setup();
-			d = new FirefoxDriver();
-			d.manage().window().maximize();
-			d.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+			d.set(new FirefoxDriver());
+			d.get().manage().window().maximize();
+			d.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 			return d;
 		} else if (browser.equalsIgnoreCase("Edge")) {
 			WebDriverManager.edgedriver().setup();
-			d = new EdgeDriver();
-			d.manage().window().maximize();
-			d.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+			d.set(new EdgeDriver());
+			d.get().manage().window().maximize();
+			d.get().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
 			return d;
 		} else {
 			System.out.println("No browser found");
